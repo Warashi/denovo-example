@@ -1,2 +1,3 @@
-typeset -gaU DENOVO_PATH
-DENOVO_PATH+=("${0:a:h}")
+function denovo-example-init() {
+  denovo-load denovo-example "${0:a:h}/denovo/example/main.ts"
+}

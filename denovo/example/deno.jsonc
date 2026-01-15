@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "@warashi/denovo-core": "jsr:@warashi/denovo-core@0.1.0"
+  }
+}
