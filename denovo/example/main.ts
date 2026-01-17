@@ -1,12 +1,10 @@
-import { Denovo } from "https://deno.land/x/denovo_core@v0.0.1/mod.ts";
+import { type Entrypoint } from "@warashi/denovo-core";
 
-export async function main(denovo: Denovo): Promise<void> {
-  const result = await denovo.eval("echo hello world");
-  console.log(result.trim());
+export const main: Entrypoint = (denovo) => {
   denovo.dispatcher = {
-    // deno-lint-ignore require-await
-    async echo(...args: unknown[]): Promise<unknown[]> {
+    echo: async (...args: unknown[]): Promise<unknown[]> => {
+      await denovo.call("eval", "echo hello from dispatcher");
       return args;
     },
   };
-}
+};
