@@ -1,5 +1,5 @@
 {
   "imports": {
-    "@warashi/denovo-core": "jsr:@warashi/denovo-core@0.1.0"
+    "@warashi/denovo-std": "jsr:@warashi/denovo-std@0.1.0"
   }
 }

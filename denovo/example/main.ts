@@ -1,4 +1,4 @@
-import { type Entrypoint } from "@warashi/denovo-core";
+import { type Entrypoint } from "@warashi/denovo-std";
 
 export const main: Entrypoint = (denovo) => {
   denovo.dispatcher = {
